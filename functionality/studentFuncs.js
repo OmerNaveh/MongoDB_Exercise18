@@ -54,3 +54,17 @@ async function setBirthToStudent(newBirth, studentName){
     )
 }
 //setBirthToStudent('02/12/1998', 'Koren'); - task was to change birth date to particular student
+
+//       -- Text Search --        //
+async function getAllStudentsContainingO(){
+    const students = await Student.find({name: /o/i}); //the i makes the rejex case-insesitive
+    return students;
+}
+//getAllStudentsContainingO(); - return all student whose name contains o/O
+
+async function getAllStudentsContainingHOrY(){
+    const students = await Student.find({name: {$in:[/h/i, /y/i]}}); //the i makes the rejex case-insesitive
+    console.log(students);
+    return students;
+}
+//getAllStudentsContainingHOrY() - return all students whose name contains h/H or y/Y
