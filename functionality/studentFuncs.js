@@ -68,3 +68,20 @@ async function getAllStudentsContainingHOrY(){
     return students;
 }
 //getAllStudentsContainingHOrY() - return all students whose name contains h/H or y/Y
+
+//       -- Delete --        //
+async function deleteByName(studentName){
+    Student.deleteOne({name: studentName}).then(
+        console.log(`Deleted ${studentName} Successfully.`)
+    )
+}
+// deleteByName('Ido'); - deletes student by Name
+
+async function deleteByBirth(birthParam){
+    const birthDate = new Date(birthParam); //in case argument is not in date type
+    console.log(birthDate);
+    Student.deleteOne({birth:birthDate}).then(
+        console.log(`Deleted Successfully.`)
+    )
+}
+// deleteByBirth("02/04/1998"); - deletes student by BirthDate
