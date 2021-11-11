@@ -6,7 +6,7 @@ mongoose.connect(process.env.DATABASE).then(console.log("Connected to DB..."));
 const CommentSchema = mongoose.Schema({
     username:String,
     comment:String,
-    post: mongoose.Schema.ObjectId
+    post: String
 })
 
 const Comment = mongoose.model('Comment', CommentSchema);
