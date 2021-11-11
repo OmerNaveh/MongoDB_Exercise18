@@ -108,7 +108,6 @@ query the `students` collection to
 - get all students where courses include "Java" and gender set to "Female"
 - get all students where birth > 05/05/1998
 - get all students where phone starts with 054
-- get all students where phone starts with 054
 
 ## Update Documents
 
