@@ -38,3 +38,19 @@ async function getStudentsBynNumberStartsWith(){
     return students;
 }
 //getStudentsBynNumberStartsWith() - returns all Students whose number starts with 054
+
+//       --Updates--        //
+async function addCourseToStudent(coureName, studentName){
+    Student.updateMany({name: studentName}, {$push:{ courses: coureName}}).then(
+        console.log('Updated Course Successfully')
+    )
+}
+// addCourseToStudent('JavaScript', 'Yahalom'); - task was to add a course to a student
+
+async function setBirthToStudent(newBirth, studentName){
+    const setBirth = new Date(newBirth); // in case argument was sent in non date format
+    Student.updateOne({name:studentName}, {birth:setBirth}).then(
+        console.log('Updated birth Successfully')
+    )
+}
+//setBirthToStudent('02/12/1998', 'Koren'); - task was to change birth date to particular student
