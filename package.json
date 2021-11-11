@@ -1,0 +1,28 @@
+{
+  "name": "MongoDB_Exercise18",
+  "version": "1.0.0",
+  "description": "- This repo is for completing an assignment for Cyber4s - Instructions are below.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmerNaveh/MongoDB_Exercise18.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OmerNaveh/MongoDB_Exercise18/issues"
+  },
+  "homepage": "https://github.com/OmerNaveh/MongoDB_Exercise18#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
