@@ -12,19 +12,6 @@
 4. Query Selectors
 5. Schemas
 
-## Resources:
-
-1. [Query Selectors & Projection Operators](https://docs.mongodb.com/manual/reference/operator/query/)
-1. [Date types](https://docs.mongodb.com/manual/reference/bson-types/)
-
-## Tools
-
-- For a sense of true Database feel free to use
-  [Faker](https://www.npmjs.com/package/faker)
-- For learning Query Selectors & Projection Operators without the need for configuration you are welcome to use
-  [Mongo playground](https://mongoplayground.net/)
-
-![MongoDB](https://gocode.colorado.gov/wp-content/uploads/2020/11/MongoDB-sm-logo-500x400.gif)
 
 ## Task:
 
@@ -285,10 +272,6 @@ answers : [
     ]
 difficulty: 8
 ```
-
-##### feel free to add your own questions in here
-
----
 
 ### Please create a restful API where crud operations can be performed on the questions we entered.
 
